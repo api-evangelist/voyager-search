@@ -1,23 +1,83 @@
 aid: voyager-search
+
 name: Voyager Search
-description: 'Voyager Search is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Voyager is a ready-to-deploy platform that connects, enriches, and operationalizes distributed geospatial, non‑spatial, structured and unstructured data—powering analytics, AI, and mission‑critical decisions for enterprises. It provides an intelligence layer for geospatial and enterprise data, enabling users to ingest, index, and query massive datasets with advanced search, visualization, and integration capabilities.'
+
+image: 'https://framerusercontent.com/images/dU0AaD5P0E3UEps2bbNcgyClyk0.png'
+
 url: https://raw.githubusercontent.com/api-evangelist/voyager-search/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
+- Geospatial
+- Data-Intelligence
+- Enterprise
+- Search
+- Platform
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: SecurityTxt
+  url: well-known/voyager-search-product-security.txt
+- type: WellKnown
+  url: well-known/voyager-search-well-known.yml
+- type: Hosts
+  url: hosts/voyager-search-hosts.yml
+- type: SDKs
+  url: packages/voyager-search-packages.yml
+- type: Packages
+  url: packages/voyager-search-packages.yml
+- type: TermsOfService
+  url: https://www.voyagersearch.com/terms-of-use
+- type: Security
+  url: https://www.voyagersearch.com/platform/security
+- type: PrivacyPolicy
+  url: https://www.voyagersearch.com/privacy-policy
+- type: Newsroom
+  url: https://www.voyagersearch.com/newsroom/filters/all
+- type: GitHubOrganization
+  url: https://github.com/voyagersearch
+- type: DomainSecurity
+  url: security/voyager-search-domain-security.yml
 - type: Website
-  url: http://voyagersearch.com
+  url: https://www.voyagersearch.com
+- type: Documentation
+  url: https://www.voyagersearch.com/platform
+- type: Support
+  url: https://www.voyagersearch.com/contact
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages are rendered via Framer and provide no machine‑readable API specifications.
+  evidence:
+    - url: https://www.voyagersearch.com
+      status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,24 @@
+generated: '2026-10-23'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/voyagersearch
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (security/voyager-search-domain-security.yml,
+  voyagersearch.com) or its accepted GitHub org (voyagersearch).'
+packages:
+- name: quickstart-java
+  registry: github
+  url: https://github.com/voyagersearch/quickstart-java
+  language: Java
+  official: true
+  version: null
+  published: '2016-08-30'
+  source_repo: https://github.com/voyagersearch/quickstart-java
+  evidence: repository in github.com/voyagersearch, whose profile names the provider's domain
+- name: voyager-search
+  registry: npm
+  url: https://www.npmjs.com/package/voyager-search
+  language: JavaScript
+  official: false
+  version: 1.0.3
+  published: '2016-05-28'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'
